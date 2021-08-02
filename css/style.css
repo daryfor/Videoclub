@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+header span {
+    cursor: pointer;
+    padding: 0.8em;
+    margin: 0 0.2em;
+    background-color: rgb(37, 103, 134);
+    transition: all 0.2s;
+}
+
+header span:hover {
+    background-color: rgb(95, 209, 200);
+    color: black;
+}
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.movie {
+    cursor: pointer;
+    padding: 0.4em;
+    text-align: center;
+    width: min-content;
+}
+
+.movieTitle {
+    margin-bottom: 230px;
+    margin-left: -1223px;
+    font-size: 1.5em;
+}
+
+.details {
+    padding: 0px 200px 0px 200px;
+    margin-top: -215px;
+    padding-right: 360px;
+    text-align: justify;
+}
+
+img:hover {
+    opacity: 0.3;   
+}
