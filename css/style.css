@@ -23,7 +23,7 @@ header span:hover {
 }
 
 .peliculas {
-    display: flex;
+    display: -webkit-box;
     flex-wrap: wrap;
     padding: 1em;
     justify-content: space-between;
@@ -37,15 +37,17 @@ header span:hover {
 }
 
 .movieTitle {
-    margin-bottom: 230px;
-    margin-left: -1223px;
+    margin-top: 1%;
+    margin-left: 1%;
     font-size: 1.5em;
 }
 
 .details {
-    padding: 0px 200px 0px 200px;
-    margin-top: -215px;
-    padding-right: 360px;
+    /*padding: 0px 200px 0px 200px;*/
+    margin-top: -11%;
+    margin-left: 11%;
+    margin-right: 8%;
+    /*padding-right: 360px;*/
     text-align: justify;
 }
 

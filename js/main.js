@@ -15,6 +15,8 @@ let getMovieDetailedHtml = movie => {
         <div class="movieTitle"><h4>${movie.title}</h4></div>
         </br>
         <div class="details">
+            <span><b>Título original:</b> ${movie.original_title}</span></br>
+            <span><b>Idioma original:</b> ${movie.original_language}</span></br>
             <span><b>Popularidad:</b> ${movie.popularity}</span>
             <p><b>Descripcion:</b></br>${movie.overview}</p>
         </div>
@@ -56,6 +58,7 @@ let getMovieDetailed = movie_id => {
     axios.get(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=9b87173a0264738f1aca5ecf47c73157&language=es-ES`)
     .then(res=> {
         let movie = res.data;
+        //getMovieDetailedHtml(movie);
         document.querySelector('.peliculas').innerHTML = getMovieDetailedHtml(movie);
     })
     .catch(console.error)
